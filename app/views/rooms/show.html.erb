@@ -3,5 +3,7 @@
     <h1><%= @room.title %></h1>
     <p><%= @room.description %></p>
     <%= link_to "View all rooms", rooms_path, class: "btn btn-danger btn-lg" %>
+    <%= link_to "Edit", edit_room_path(@room), class: "btn btn-danger btn-lg" %>
+    <%= link_to "Delete", room_path(@room), method: :delete, data: {confirm: "Got something better to do?"}, class: "btn btn-danger btn-lg" %>
   </div>
 </div>

@@ -1,0 +1,5 @@
+<%= simple_form_for(@room) do |f| %>
+  <%= f.input :title, label: "Please enter a title" %>
+  <%= f.input :description, label: "What do you wanna do?" %>
+  <%= f.submit "Do it!", class: "btn btn-warning" %>
+<% end %>
