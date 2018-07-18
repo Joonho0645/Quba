@@ -1,2 +1,11 @@
-<h1>Rooms#new</h1>
-<p>Find me in app/views/rooms/new.html.erb</p>
+<div class="container"">
+  <div class="row">
+    <div class="col col-sm-4 col-sm-offset-4">
+      <%= simple_form_for(@room) do |f| %>
+      <%= f.input :title, label: "Please enter a title" %>
+      <%= f.input :description, label: "What do you wanna do?" %>
+      <%= f.submit "Create your room!", class: "btn btn-warning" %>
+      <% end %>
+    </div>
+  </div>
+</div>
